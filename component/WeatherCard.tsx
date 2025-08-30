@@ -25,7 +25,7 @@ const WeatherCard: React.FC = () => {
     description: "Partly Cloudy",
     humidity: 65,
     windSpeed: 12,
-    location: "Singapore",
+    location: "Phuntsholing",
   });
 
   const [loading, setLoading] = useState(false);

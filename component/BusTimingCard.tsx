@@ -16,21 +16,21 @@ const BusTimingCard: React.FC = () => {
   const [busArrivals, setBusArrivals] = useState<BusArrival[]>([
     {
       busNumber: "14",
-      destination: "Bedok Int",
+      destination: "To Pasakha",
       estimatedArrival: 3,
       nextArrival: 15,
       occupancy: "Low",
     },
     {
       busNumber: "16",
-      destination: "Bedok North St",
+      destination: "BFAL to Chumithang",
       estimatedArrival: 7,
       nextArrival: 22,
       occupancy: "Medium",
     },
     {
       busNumber: "31",
-      destination: "Changi Airport",
+      destination: "Mallbase to Chumithang",
       estimatedArrival: 12,
       nextArrival: 28,
       occupancy: "High",
@@ -124,7 +124,6 @@ const BusTimingCard: React.FC = () => {
       <div className="bg-gray-900/95 backdrop-blur-md rounded-2xl p-6 h-full">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center">
-            <Bus className="w-6 h-6 text-orange-400 mr-2" />
             <h2 className="text-xl font-bold text-white">Bus Timing</h2>
           </div>
           <button
@@ -138,7 +137,7 @@ const BusTimingCard: React.FC = () => {
 
         <div className="flex items-center text-gray-400 text-sm mb-4">
           <MapPin className="w-4 h-4 mr-1" />
-          <span>Bus Stop 59009 - Opposite Bedok Mall</span>
+          <span>City Bus Terminal</span>
         </div>
 
         <div className="space-y-3 max-h-64 overflow-y-auto">
